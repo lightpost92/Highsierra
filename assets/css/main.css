@@ -3512,7 +3512,7 @@ input, select, textarea {
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
-			padding: 6em;
+			/*padding: 6em;*/
 			position: relative;
 			text-align: center;
 			vertical-align: middle;
@@ -3855,6 +3855,13 @@ input, select, textarea {
 				height: 0.8em;
 				margin: -0.4em 0 0 -0.6em;
 				width: 1.2em;
+			}
+			@media screen and (max-width: 736px){
+				.goto-next:before {
+					height: 2.8em;
+					margin: -0.4em 0 0 -0.6em;
+					width: 1.2em;
+				}
 			}
 
 		/* Spotlight */
