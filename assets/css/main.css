@@ -3549,6 +3549,15 @@ input, select, textarea {
 				vertical-align: middle;
 				width: 18em;
 			}
+			
+			#banner .content2 .image2 {
+				border-radius: 100%;
+				display: inline-block;
+				height: 18em;
+				
+				vertical-align: middle;
+				width: 18em;
+			}
 
 				#banner .content .image img {
 					border-radius: 100%;
@@ -3560,6 +3569,12 @@ input, select, textarea {
 					display: block;
 					width: 100%;
 				}
+				#banner .content2 .image2 img {
+					border-radius: 100%;
+					display: block;
+					width: 100%;
+				}
+				
 
 	body.is-touch #banner {
 		background-attachment: scroll;
