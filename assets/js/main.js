@@ -205,6 +205,76 @@
 				breakpoints.on('>medium', on);
 
 			});
+	//Navigation 
+	class MyHeader extends HTMLElement{
+		connectedCallback(){
+			this.innerHTML=`
+			<header id="header">
+
+			<nav id="nav">
+				<ul>
+					<li class="nav"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="about.html#one" class="button primary">Book a call<i
+								class="fa-solid fa-arrow-right"></i> </a></li>
+				</ul>
+			</nav>
+		</header>
+			`
+		}
+	}
+	customElements.define('my-header', MyHeader)
+	//footer
+	class MyFooter extends HTMLElement{
+		connectedCallback(){
+			this.innerHTML=`
+			<footer id="footer">
+			<ul class="icons">
+				<!--	<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+				<li><a href="https://www.facebook.com/Highsierrasolutions/" class="icon brands alt fa-facebook-f"><span
+							class="label">Facebook</span></a></li>
+
+				<li><a href="https://www.instagram.com/highsierrasolutions/" class="icon brands alt fa-instagram"><span
+							class="label">Instagram</span></a></li>
+				<li><a href="mailto:alexander@highsierrasolutions.com" class="icon solid alt fa-envelope"><span
+							class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; High Sierra Solutions LLC. All rights reserved.</li>
+				<li>Design: <a href="#">Lightpost</a></li>
+			</ul>
+		</footer>
+			`
+		}
+	}
+	customElements.define('my-footer', MyFooter)
+
+	//head 
+	class MyHead extends HTMLElement{
+		connectedCallback(){
+			this.innerHTML=`
+			<title>High Sierra Solutions LLC</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<noscript>
+				<link rel="stylesheet" href="assets/css/noscript.css" />
+			</noscript>
+			<script src="https://kit.fontawesome.com/d8ee75d3cc.js" crossorigin="anonymous"></script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHJ16SFSPY"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-EHJ16SFSPY');
+		</script>
+			`
+		}
+	}
+	customElements.define('my-head', MyHead)
 
 	// Wrappers.
 		var $wrappers = $('.wrapper');
