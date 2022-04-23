@@ -3856,13 +3856,6 @@ input, select, textarea {
 				margin: -0.4em 0 0 -0.6em;
 				width: 1.2em;
 			}
-			@media screen and (max-width: 736px){
-				.goto-next:before {
-					height: 2.8em;
-					margin: -0.4em 0 0 -0.6em;
-					width: 1.2em;
-				}
-			}
 
 		/* Spotlight */
 
