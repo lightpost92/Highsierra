@@ -12,6 +12,15 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<script src="https://kit.fontawesome.com/d8ee75d3cc.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHJ16SFSPY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EHJ16SFSPY');
+</script>
 </head>
 
 <body class="is-preload landing">
@@ -206,6 +215,7 @@
 						method="POST">
 						<div class="form-group">
 							<div class="form-row">
+							
 								<div class="">
 									<input type="text" name="name" class="form-control" placeholder="Full Name"
 										required>
@@ -221,6 +231,9 @@
 								required></textarea>
 						</div>
 						<button type="submit" class="button">Get Started</button>
+						<div>
+							<input type="hidden" name="_next" value="https://highsierrasolutions/thankyou.html">
+						</div>
 					</form>
 				</div>
 
